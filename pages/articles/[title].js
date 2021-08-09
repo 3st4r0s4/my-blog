@@ -20,7 +20,7 @@ export default function ArticleDetails({ article }) {
 
 export async function getStaticProps({ params }) {
   const articleResponse = await axios.get(
-    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/articles/${params.title}`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/articles/${params.id}`
   );
 
   return {
