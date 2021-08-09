@@ -12,7 +12,7 @@ export default function AllArticles({ articles }) {
     <>
       <h2>Articles</h2>
 
-      <form className="d-flex">
+      {/* <form className="d-flex">
         <input
           onKeyUp={searchArticle}
           className="form-control me-2"
@@ -20,12 +20,12 @@ export default function AllArticles({ articles }) {
           placeholder="Search"
           aria-label="Search"
         ></input>
-        {/* <button className="btn btn-outline-success" type="submit">
+        <button className="btn btn-outline-success" type="submit">
           Search
-        </button> */}
+        </button>
       </form>
       <hr />
-      <br />
+      <br /> */}
       {renderArticlePreviews()}
     </>
   );
