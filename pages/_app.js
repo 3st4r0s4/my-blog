@@ -16,12 +16,12 @@ function MyApp({ Component, pageProps }) {
         ></script>
       </Head>
       <NavBar />
-      <div className="container">
+      <div className="myContainer">
         <Component {...pageProps} />
       </div>
 
       <style jsx>{`
-        .container {
+        .myContainer {
           padding-top: 30px;
         }
       `}</style>

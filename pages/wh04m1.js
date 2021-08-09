@@ -7,6 +7,7 @@ export default function whoami() {
     <>
       <Head>
         <title>Wh04m1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <header>

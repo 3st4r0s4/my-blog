@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import MarkdownIt from "markdown-it";
+import Head from "next/head";
 
 export default function ArticleDetails({ article }) {
   const md = new MarkdownIt();
@@ -8,19 +9,19 @@ export default function ArticleDetails({ article }) {
 
   return (
     <>
-      <h1>{article.title}</h1>
-      <p>{article.description}</p>
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+      <Head>
+        <title>{article.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <article>
+        <header>
+          <h1>{article.title}</h1>
+          <p>{article.description}</p>
+        </header>
+
+        <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
+      </article>
     </>
-
-    // <article>
-    //   <header>
-    //     <h1>{article.title}</h1>
-    //     <p>{article.description}</p>
-    //   </header>
-
-    //   <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
-    // </article>
   );
 }
 

@@ -9,6 +9,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <HomeHeader />
