@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          L0rd B4n
+          Little Cyber Space
         </a>
         <button
           className="navbar-toggler"
