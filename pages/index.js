@@ -22,6 +22,8 @@ export async function getStaticProps() {
     `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/articles`
   );
 
+  console.log(response);
+
   return {
     props: {
       articles: response.data,
