@@ -6,7 +6,7 @@ export default function ArticlePreview({ article }) {
     <>
       <div className="card  ">
         <img
-          src={`${process.env.NEXT_PUBLIC_STRAPI_API_URL}${article.cover.url}`}
+          src={`${article.cover.url}`}
           className="card-img-top"
           width={480}
           height={400}
