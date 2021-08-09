@@ -7,14 +7,20 @@ export default function ArticleDetails({ article }) {
   const htmlContent = md.render(article.body);
 
   return (
-    <article>
-      <header>
-        <h1>{article.title}</h1>
-        <h2>{article.description}</h2>
-      </header>
+    <>
+      <h1>{article.title}</h1>
+      <p>{article.description}</p>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+    </>
 
-      <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
-    </article>
+    // <article>
+    //   <header>
+    //     <h1>{article.title}</h1>
+    //     <p>{article.description}</p>
+    //   </header>
+
+    //   <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
+    // </article>
   );
 }
 
