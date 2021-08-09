@@ -38,7 +38,7 @@ export async function getStaticPaths() {
   const paths = articlesResponse.data.map((article) => {
     return {
       params: {
-        id: article.title.toString().toLowerCase(),
+        title: article.title.toString().toLowerCase(),
       },
     };
   });
