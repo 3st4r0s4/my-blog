@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 export default function ArticlePreview({ article }) {
-  console.log(article.cover.url);
   return (
     <>
       <div className="card  ">
