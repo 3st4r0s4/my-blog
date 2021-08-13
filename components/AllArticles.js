@@ -3,8 +3,8 @@ import ArticlePreview from "./ArticlePreview";
 
 export default function AllArticles({ articles }) {
   function renderArticlePreviews() {
-    articles.sort((a, b) => (a.id > b.id ? 1 : -1));
-    return articles.map((article) => {
+    let sortedArticles = articles.sort((a, b) => (a.id > b.id ? 1 : -1));
+    return sortedArticles.map((article) => {
       return <ArticlePreview article={article} key={article.id} />;
     });
   }
