@@ -3,6 +3,7 @@ import ArticlePreview from "./ArticlePreview";
 
 export default function AllArticles({ articles }) {
   function renderArticlePreviews() {
+    articles.sort((a, b) => (a.id > b.id ? 1 : -1));
     return articles.map((article) => {
       return <ArticlePreview article={article} key={article.id} />;
     });
