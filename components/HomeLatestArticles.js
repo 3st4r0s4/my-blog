@@ -5,6 +5,7 @@ export default function HomeLatestArticles({ articles }) {
   const [latestArticles, setLatestArticles] = useState([]);
 
   useEffect(() => {
+    articles.sort((a, b) => b.id - a.id);
     setLatestArticles(articles.slice(0, 5));
   }, [articles]);
 
