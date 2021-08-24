@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function ChallengesHome() {
   return (
@@ -7,9 +8,9 @@ export default function ChallengesHome() {
         <div className="card-body">
           <h5 className="card-title">WEB</h5>
           <p className="card-text">Web related challenges.</p>
-          <a href="/challenges/web" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <Link href="challenges/Web-challenges">
+            <a className="nav-link">Go Here</a>
+          </Link>
         </div>
       </div>
     </>
