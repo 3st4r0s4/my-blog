@@ -34,6 +34,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/challenges">
+                <a className="nav-link">Challenges</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/wh04m1">
                 <a className="nav-link">Wh04m1</a>
               </Link>
