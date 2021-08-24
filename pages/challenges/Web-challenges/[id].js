@@ -1,9 +1,9 @@
 import axios from "axios";
 import React from "react";
-import MarkdownIt from "markdown-it";
 import Head from "next/head";
 
 export default function WebDetails({ wch }) {
+  let videoUrl = wch.video.url;
   return (
     <>
       <Head>
@@ -16,7 +16,9 @@ export default function WebDetails({ wch }) {
         </header>
 
         <section>
-          <video controls src={`${wch.video.url}`} type="video/mp4"></video>
+          <video autoPlay>
+            <source src="https://res.cloudinary.com/dyprhgcnc/video/upload/v1629826000/Web01_ea6e918fda.mp4" />
+          </video>
         </section>
       </article>
     </>
