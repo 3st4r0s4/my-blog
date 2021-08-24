@@ -14,6 +14,24 @@ export default function WebChPreview({ wch }) {
           </Link>
         </div>
       </div>
+
+      <style jsx>{`
+        .card {
+          margin-bottom: 30px;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: 0.3s;
+          background-color: darkgrey;
+        }
+        .card-title {
+          font-size: 30px;
+          font-weight: bold;
+          padding-bottom: 5px;
+        }
+        .nav-link {
+          font-size: 20px;
+        }
+      `}</style>
     </>
   );
 }

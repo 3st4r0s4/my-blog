@@ -1,9 +1,11 @@
 import axios from "axios";
 import React from "react";
 import Head from "next/head";
+import ReactPlayer from "react-player";
 
 export default function WebDetails({ wch }) {
-  let videoUrl = wch.video.url;
+  let videoUrl =
+    "https://res.cloudinary.com/dyprhgcnc/video/upload/v1629826000/Web01_ea6e918fda.mp4";
   return (
     <>
       <Head>
@@ -16,9 +18,7 @@ export default function WebDetails({ wch }) {
         </header>
 
         <section>
-          <video>
-            <source src="https://res.cloudinary.com/dyprhgcnc/video/upload/v1629826000/Web01_ea6e918fda.mp4" />
-          </video>
+          <ReactPlayer width={"100%"} height={"auto"} url={videoUrl} controls />
         </section>
       </article>
     </>
