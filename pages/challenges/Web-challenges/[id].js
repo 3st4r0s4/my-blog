@@ -16,13 +16,7 @@ export default function WebDetails({ wch }) {
         </header>
 
         <section>
-          <video
-            // className={`${videoPublicId.length === 0 ? "hidden" : "block m-4"}`}
-            autoPlay
-            controls
-            muted
-            src={`${wch.video.url}`}
-          ></video>
+          <video controls src={`${wch.video.url}`} type="video/mp4"></video>
         </section>
       </article>
     </>
