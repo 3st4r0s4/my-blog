@@ -16,7 +16,7 @@ export default function WebDetails({ wch }) {
         </header>
 
         <section>
-          <video autoPlay>
+          <video>
             <source src="https://res.cloudinary.com/dyprhgcnc/video/upload/v1629826000/Web01_ea6e918fda.mp4" />
           </video>
         </section>
