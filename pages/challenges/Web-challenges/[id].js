@@ -18,7 +18,13 @@ export default function WebDetails({ wch }) {
         </header>
 
         <section>
-          <ReactPlayer width={"100%"} height={"auto"} url={videoUrl} controls />
+          <ReactPlayer
+            width={"100%"}
+            height={"auto"}
+            light={wch.video.previewUrl}
+            url={videoUrl}
+            controls
+          />
         </section>
       </article>
     </>

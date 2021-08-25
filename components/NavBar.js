@@ -23,24 +23,30 @@ export default function Navbar() {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link href="/">
-                <a className="nav-link" aria-current="page">
+                <a className="nav-link" data-toggle="tab" aria-current="page">
                   Home
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/articles">
-                <a className="nav-link">Articles</a>
+                <a className="nav-link" data-toggle="tab">
+                  Articles
+                </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/challenges">
-                <a className="nav-link">Challenges</a>
+                <a className="nav-link" data-toggle="tab">
+                  Challenges
+                </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/wh04m1">
-                <a className="nav-link">Wh04m1</a>
+                <a className="nav-link" data-toggle="tab">
+                  Wh04m1
+                </a>
               </Link>
             </li>
           </ul>
