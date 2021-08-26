@@ -4,9 +4,8 @@ import Head from "next/head";
 import ReactPlayer from "react-player";
 
 export default function WebDetails({ wch }) {
-  let videoUrl =
-    "https://res.cloudinary.com/dyprhgcnc/video/upload/v1629826000/Web01_ea6e918fda.mp4";
-  let preview = wch.video.previewUrl;
+  let videoUrl = wch.video.url;
+  let preview = wch.cover.url;
   return (
     <>
       <Head>
