@@ -5,7 +5,8 @@ import ReactPlayer from "react-player";
 
 export default function WebDetails({ wch }) {
   let videoUrl = wch.video.url;
-  let preview = wch.cover.url;
+  let coverUrl = wch.cover.url;
+
   return (
     <>
       <Head>
@@ -21,8 +22,7 @@ export default function WebDetails({ wch }) {
           <ReactPlayer
             width={"100%"}
             height={"auto"}
-            light={preview}
-            url={videoUrl}
+            url={wch.video.url}
             controls
           />
         </section>
@@ -32,15 +32,21 @@ export default function WebDetails({ wch }) {
 }
 
 export async function getStaticProps({ params }) {
-  const challengeResponse = await axios.get(
-    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/Web-challenges/${params.id}`
-  );
+  try {
+    const challengeResponse = await axios.get(
+      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/Web-challenges/${params.id}`
+    );
 
-  return {
-    props: {
-      wch: challengeResponse.data,
-    },
-  };
+    console.log(challengeResponse.data);
+
+    return {
+      props: {
+        wch: challengeResponse.data,
+      },
+    };
+  } catch (error) {
+    return { error };
+  }
 }
 
 export async function getStaticPaths() {
@@ -61,3 +67,17 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+// export async function getStaticProps({ params }) {
+//   const challengeResponse = await axios.get(
+//     `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/Web-challenges/${params.id}`
+//   );
+
+//   console.log(challengeResponse.data);
+
+//   return {
+//     props: {
+//       wch: challengeResponse.data,
+//     },
+//   };
+// }
