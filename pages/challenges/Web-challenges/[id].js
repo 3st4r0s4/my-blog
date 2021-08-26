@@ -24,7 +24,7 @@ export default function WebDetails({ wch }) {
           <ReactPlayer
             width={"100%"}
             height={"auto"}
-            light={wch.coverUrl}
+            light={wch.coverUrl.formats.large.url}
             url={wch.video[0].url}
             controls
           />
