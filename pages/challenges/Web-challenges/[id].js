@@ -21,7 +21,6 @@ export default function WebDetails({ wch }) {
         </header>
 
         <section>
-          {console.log("WCH: ", wch)}
           <ReactPlayer
             width={"100%"}
             height={"auto"}
