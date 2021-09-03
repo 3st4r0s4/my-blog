@@ -36,6 +36,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/ctfs">
+                <a className="nav-link" data-toggle="tab">
+                  CTFs
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/challenges">
                 <a className="nav-link" data-toggle="tab">
                   Challenges
