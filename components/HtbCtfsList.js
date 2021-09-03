@@ -1,11 +1,11 @@
 import React from "react";
-import WebChPreview from "./WebChPreview";
+import CtfPreview from "./CtfPreview";
 
-export default function HtbCtfsList({ htbctfs }) {
+export default function HtbCtfsList({ ctfs }) {
   function renderHtbCtfPreviews() {
-    htbctfs.sort((a, b) => b.id - a.id);
-    return htbctfs.map((htbctf) => {
-      return <WebChPreview wch={htbctf} key={htbctf.id} />;
+    ctfs.sort((a, b) => b.id - a.id);
+    return ctfs.map((ctf) => {
+      return <CtfPreview ctf={ctf} key={ctf.id} />;
     });
   }
 
