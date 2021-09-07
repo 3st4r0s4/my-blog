@@ -18,7 +18,7 @@ export default function MachinesHome({ machines }) {
 
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid className="gridTest" container spacing={2}>
         {renderMachinesCards()}
       </Grid>
     </>

@@ -156,6 +156,6 @@ footer {
 
 .GridContainer {
   margin: 3.5%;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
 }
