@@ -1,35 +1,20 @@
-import React from "react";
-import ArticlePreview from "./ArticlePreview";
+// import React from "react";
+// import ArticlePreview from "./MachinePreview";
 
-export default function AllArticles({ articles }) {
-  function renderArticlePreviews() {
-    articles.sort((a, b) => b.id - a.id);
-    return articles.map((article) => {
-      return <ArticlePreview article={article} key={article.id} />;
-    });
-  }
+// export default function AllArticles({ machines }) {
+//   function renderArticlePreviews() {
+//     machines.sort((a, b) => b.id - a.id);
 
-  return (
-    <>
-      <h2>Articles</h2>
+//     return articles.map((machine) => {
+//       return <MachinePreview machine={machine} key={machine.id} />;
+//     });
+//   }
 
-      {/* <form className="d-flex">
-        <input
-          onKeyUp={searchArticle}
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        ></input>
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
-      </form>
-      <hr />
-      <br /> */}
-      {renderArticlePreviews()}
-    </>
-  );
+//   return (
+//     <>
+//       <h2>Machines</h2>
 
-  function searchArticle() {}
-}
+//       {renderArticlePreviews()}
+//     </>
+//   );
+// }

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 
 export default function whoami() {
   return (
@@ -10,15 +11,24 @@ export default function whoami() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <header>
-        <strong>Who am I?</strong>
-      </header>
-      <section>I am a Big Reader, Cyber Enthusiast and Nerd.</section>
-      <footer>
-        <Link href="#">
-          <a className="fa fa-facebook"></a>
-        </Link>
-      </footer>
+      <div class="myContainer">
+        <header>
+          <strong>Who am I?</strong>
+        </header>
+        <section>I am a Big Reader, Cyber Enthusiast and Nerd.</section>
+
+        <footer>
+          <div className="socials">
+            <strong>Reach Me</strong>
+            <br />
+            <SocialIcon
+              className="socialsIcon"
+              target="_blank"
+              url="https://instagram.com/exploitcompleted"
+            />
+          </div>
+        </footer>
+      </div>
     </>
   );
 }

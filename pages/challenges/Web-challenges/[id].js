@@ -15,20 +15,22 @@ export default function WebDetails({ wch }) {
         <title>{wch.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <article>
-        <header>
-          <h1>{wch.title}</h1>
-        </header>
+      <div className="myContainer">
+        <article>
+          <header>
+            <h1>{wch.title}</h1>
+          </header>
 
-        <section>
-          <ReactPlayer
-            width={"100%"}
-            height={"auto"}
-            url={wch.video[0].url}
-            controls
-          />
-        </section>
-      </article>
+          <section>
+            <ReactPlayer
+              width={"100%"}
+              height={"auto"}
+              url={wch.video[0].url}
+              controls
+            />
+          </section>
+        </article>
+      </div>
     </>
   );
 }

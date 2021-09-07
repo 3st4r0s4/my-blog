@@ -4,15 +4,16 @@ import Link from "next/link";
 export default function ChallengesHome() {
   return (
     <>
-      <div className="card text-center">
-        <div className="card-body">
-          <h5 className="card-title">Web</h5>
-          <Link href="challenges/Web-challenges">
-            <a className="nav-link">Go Here</a>
-          </Link>
+      <div className="myContainer">
+        <div className="card text-center">
+          <div className="card-body">
+            <h5 className="card-title">Web</h5>
+            <Link href="challenges/Web-challenges">
+              <a className="nav-link">Go Here</a>
+            </Link>
+          </div>
         </div>
       </div>
-
       <style jsx>{`
         .card {
           margin-bottom: 30px;

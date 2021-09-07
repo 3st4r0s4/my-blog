@@ -3,6 +3,7 @@ import "../styles/globals.css";
 // add bootstrap css
 import "bootstrap/dist/css/bootstrap.css";
 import Head from "next/head";
+import HomeHeader from "../components/HomeHeader";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -27,15 +28,14 @@ function MyApp({ Component, pageProps }) {
         ></link>
       </Head>
       <NavBar />
-      <div className="myContainer">
-        <Component {...pageProps} />
-      </div>
 
-      <style jsx>{`
+      <Component {...pageProps} />
+
+      {/* <style jsx>{`
         .myContainer {
           padding-top: 30px;
         }
-      `}</style>
+      `}</style> */}
     </>
   );
 }

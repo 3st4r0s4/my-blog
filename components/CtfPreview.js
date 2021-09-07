@@ -31,6 +31,7 @@ export default function CtfPreview({ ctf }) {
           transition: 0.3s;
           background-color: honeydew;
         }
+
         .card-title {
           font-size: 30px;
           font-weight: bold;

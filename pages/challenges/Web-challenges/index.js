@@ -5,8 +5,11 @@ import WebChallengesList from "../../../components/WebChallengesList";
 export default function index({ wchs }) {
   return (
     <>
-      <h1>Web Challenges</h1>
-      <WebChallengesList wchs={wchs} />
+      <div className="myContainer">
+        <h1>Web Challenges</h1>
+        <br />
+        <WebChallengesList wchs={wchs} />
+      </div>
     </>
   );
 }

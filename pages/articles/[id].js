@@ -13,14 +13,16 @@ export default function ArticleDetails({ article }) {
         <title>{article.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <article>
-        <header>
-          <h1>{article.title}</h1>
-          <p>{article.description}</p>
-        </header>
+      <div className="myContainer">
+        <article>
+          <header>
+            <h1>{article.title}</h1>
+            <p>{article.description}</p>
+          </header>
 
-        <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
-      </article>
+          <section dangerouslySetInnerHTML={{ __html: htmlContent }}></section>
+        </article>
+      </div>
     </>
   );
 }

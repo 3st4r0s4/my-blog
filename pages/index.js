@@ -2,30 +2,29 @@ import axios from "axios";
 import React from "react";
 import Head from "next/head";
 import HomeHeader from "../components/HomeHeader";
-import HomeLatestArticles from "../components/HomeLatestArticles";
+import HomeLatestMachines from "../components/HomeLatestMachines";
 
-export default function Home({ articles }) {
+export default function Home({ machines }) {
   return (
     <>
       <Head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
       <HomeHeader />
-      <HomeLatestArticles articles={articles} />
+      <HomeLatestMachines machines={machines} />
     </>
   );
 }
 
 export async function getStaticProps() {
   const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/articles`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/machines`
   );
 
   return {
     props: {
-      articles: response.data,
+      machines: response.data,
     },
   };
 }
