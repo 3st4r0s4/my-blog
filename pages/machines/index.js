@@ -12,7 +12,7 @@ export default function index({ machines }) {
       </Head>
       <div className="GridContainer">
         {/* <h2>TODO: Listing all machines and code a filter feature</h2> */}
-        <h1>All Machines</h1>
+
         <br />
         <MachinesHome machines={machines} />
       </div>
