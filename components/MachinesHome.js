@@ -9,7 +9,7 @@ export default function MachinesHome({ machines }) {
     machines.sort((a, b) => b.id - a.id);
     return machines.map((machine) => {
       return (
-        <Grid key={machine.id} item xs={12} sm={6} md={3} lg={4}>
+        <Grid key={machine.id} item xs={12} sm={8} md={3} lg={4}>
           <MachineCard machine={machine} />
         </Grid>
       );
@@ -18,9 +18,11 @@ export default function MachinesHome({ machines }) {
 
   return (
     <>
-      <Grid container alignItems="center" justify="center" spacing={2}>
-        {renderMachinesCards()}
-      </Grid>
+      <div className="myContainer">
+        <Grid container alignItems="center" justify="center" spacing={2}>
+          {renderMachinesCards()}
+        </Grid>
+      </div>
     </>
   );
 }
