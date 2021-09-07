@@ -153,3 +153,8 @@ footer {
 .socialsIcon {
   margin-bottom: 20px;
 }
+
+.GridContainer {
+  margin: 30px;
+  justify-content: center;
+}
