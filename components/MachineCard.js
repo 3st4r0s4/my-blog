@@ -36,13 +36,6 @@ export default function MachineCard({ machine }) {
           </CardContent>
         </a>
       </CardActionArea>
-      {/* <CardActions>
-        <Button size="large" variant="contained">
-          <a target="_blank" href={`/machines/${machine.id}`}>
-            See More
-          </a>
-        </Button>
-      </CardActions> */}
     </Card>
   );
 }
