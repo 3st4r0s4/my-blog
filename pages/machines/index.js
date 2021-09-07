@@ -10,7 +10,7 @@ export default function index({ machines }) {
         <title>Machines</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="myContainer">
+      <div className="gridContainer">
         {/* <h2>TODO: Listing all machines and code a filter feature</h2> */}
         <h1>All Machines</h1>
         <br />

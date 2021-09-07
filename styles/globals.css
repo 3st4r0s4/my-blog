@@ -154,6 +154,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.gridC {
+.gridContainer {
+  margin: 3.5%;
   justify-content: center;
 }
