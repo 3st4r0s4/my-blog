@@ -19,7 +19,7 @@ export default function MachineCard({ machine }) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className="card">
       <CardActionArea>
         <a href={`/machines/${machine.id}`}>
           <CardMedia

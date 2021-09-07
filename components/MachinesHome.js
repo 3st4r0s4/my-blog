@@ -19,13 +19,9 @@ export default function MachinesHome({ machines }) {
 
   return (
     <>
-      <div className="myContainer">
-        <h1>All Machines</h1>
-        <br />
-        <Grid container spacing={3}>
-          {renderMachinesCards()}
-        </Grid>
-      </div>
+      <Grid container spacing={3}>
+        {renderMachinesCards()}
+      </Grid>
     </>
   );
 }
