@@ -18,11 +18,9 @@ export default function MachinesHome({ machines }) {
 
   return (
     <>
-      <div className="myContainer">
-        <Grid container alignItems="center" justify="center" spacing={2}>
-          {renderMachinesCards()}
-        </Grid>
-      </div>
+      <Grid container alignItems="center" justify="center" spacing={2}>
+        {renderMachinesCards()}
+      </Grid>
     </>
   );
 }
