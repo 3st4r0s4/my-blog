@@ -153,3 +153,7 @@ footer {
 .socialsIcon {
   margin-bottom: 20px;
 }
+
+.gridC {
+  justify-content: center;
+}
