@@ -61,7 +61,7 @@ export default function HomeLatestMachines({ machines }) {
               aria-current="true"
               aria-label="Slide 1"
             ></button>
-            {addSlide()}
+            {/* {addSlide()} */}
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
