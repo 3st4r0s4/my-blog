@@ -10,18 +10,18 @@ export default function HomeLatestMachines({ machines }) {
     setLatestMachines(machines.slice(0, 5));
   }, [machines]);
 
-  function addSlide() {
-    for (let i = 1; i < latestMachines.length; i++) {
-      return (
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to={i}
-          aria-label={`Slide ${i + 1}`}
-        ></button>
-      );
-    }
-  }
+  // function addSlide() {
+  //   for (let i = 1; i < latestMachines.length; i++) {
+  //     return (
+  //       <button
+  //         type="button"
+  //         data-bs-target="#carouselExampleIndicators"
+  //         data-bs-slide-to={i}
+  //         aria-label={`Slide ${i + 1}`}
+  //       ></button>
+  //     );
+  //   }
+  // }
 
   function renderMachinePreviews() {
     return latestMachines.map((machine) => {
@@ -62,7 +62,7 @@ export default function HomeLatestMachines({ machines }) {
               aria-label="Slide 1"
             ></button>
             {addSlide()}
-            {/* <button
+            <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
@@ -73,7 +73,13 @@ export default function HomeLatestMachines({ machines }) {
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button> */}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
           </div>
           <div className="carousel-inner" id="carousel">
             {/* <div className="carousel-item active">
