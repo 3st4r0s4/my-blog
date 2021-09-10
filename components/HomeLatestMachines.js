@@ -11,7 +11,7 @@ export default function HomeLatestMachines({ machines }) {
   }, [machines]);
 
   function addSlide(machines) {
-    for (let i = 1; i < machines.length(); i++) {
+    for (let i = 1; i < machines.length; i++) {
       return (
         <button
           type="button"
