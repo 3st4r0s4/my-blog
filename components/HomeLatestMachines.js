@@ -10,8 +10,9 @@ export default function HomeLatestMachines({ machines }) {
     setLatestMachines(machines.slice(0, 5));
   }, [machines]);
 
-  function addSlide(machines) {
-    for (let i = 1; i < machines.length; i++) {
+  function addSlide() {
+    let i = 1;
+    return latestMachines.map((machine) => {
       return (
         <button
           type="button"
@@ -20,7 +21,7 @@ export default function HomeLatestMachines({ machines }) {
           aria-label={i + 1}
         ></button>
       );
-    }
+    });
   }
 
   function renderMachinePreviews() {
