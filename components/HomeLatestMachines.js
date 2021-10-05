@@ -24,7 +24,7 @@ export default function HomeLatestMachines({ machines }) {
   // }
 
   function renderMachinePreviews() {
-    let sortedmachines = latestMachines.sort((a,b) => b-a)
+    let sortedmachines = latestMachines.sort((a,b) => b.id-a.id)
     return sortedmachines.map((machine) => {
       return (
         <MachinePreview
