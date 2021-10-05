@@ -86,6 +86,12 @@ export default function HomeLatestMachines({ machines }) {
               data-bs-slide-to="4"
               aria-label="Slide 5"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
           </div>
           <div className="carousel-inner" id="carousel">
             {/* <div className="carousel-item active">
