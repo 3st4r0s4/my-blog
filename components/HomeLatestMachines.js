@@ -29,7 +29,7 @@ export default function HomeLatestMachines({ machines }) {
       return (
         <MachinePreview
           machine={machine}
-          length={latestMachines.length}
+          length={5}
           key={machine.id}
         />
       );
