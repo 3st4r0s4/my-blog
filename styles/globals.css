@@ -157,3 +157,9 @@ footer {
 .card {
   width: 100%;
 }
+
+img {
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
