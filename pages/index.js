@@ -20,14 +20,14 @@ export default function Home({ machines }) {
   );
 }
 
-export async function getStaticProps() {
-  const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/machines`
-  );
+// export async function getStaticProps() {
+//   const response = await axios.get(
+//     `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/machines`
+//   );
 
-  return {
-    props: {
-      machines: response.data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       machines: response.data,
+//     },
+//   };
+// }

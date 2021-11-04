@@ -29,7 +29,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <NavBar />
 
-      <Component {...pageProps} />
+      {/* <Component {...pageProps} /> */}
+
+      <img src="uc.jpg"></img>
 
       {/* <style jsx>{`
         .myContainer {
