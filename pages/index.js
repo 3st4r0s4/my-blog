@@ -7,12 +7,15 @@ import HomeLatestMachines from "../components/HomeLatestMachines";
 export default function Home({ machines }) {
   return (
     <>
-      <Head>
+
+      {/* <Head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <HomeHeader />
-      <HomeLatestMachines machines={machines} />
+      <HomeLatestMachines machines={machines} /> */}
+
+      <img src="uc.jpg"></img>
     </>
   );
 }
